@@ -17,7 +17,13 @@
         <div id="page-start">
           <a href=""><img src="img/ТЕХНОМАРТ.svg" alt="ТЕХНОМАРТ"></a>
         </div>
-        <div>Поиск</div>
+        <div class="search">
+          <form action="#" method="get">
+            <label aria-placeholder="Поиск">
+              <input type="text" name="search" placeholder="Поиск:">
+            </label>
+          </form>
+        </div>
         <div>
           <a href="bookmarks.html">
             <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
@@ -61,14 +67,37 @@
   </header>
   <main>
     <h1 class="visually-hidden">Техномарт, интернет-магазин техники</h1>
-
-    <section>
-      <article>Материалы</article>
-      <article>Инструмент</article>
-      <article>Техника</article>
-      <article class="carusel">ДРЕЛИ</article>
-      <article>Скидки 50%</article>
-      <article>Доставка</article>
+    <section class="offers">
+      <div class="category">
+        <h2>Материалы</h2>
+        <img src="img/icon-1.svg" alt="">
+        <a href="#">На любой вкус</a>
+      </div>
+      <div class="category">
+        <h2>Инструмент</h2>
+        <img src="img/icon-2.svg" alt="">
+        <a href="#">На любой вкус</a>
+      </div>
+      <div class="category">
+        <h2>Техника</h2>
+        <img src="img/icon-3.svg" alt="">
+        <a href="#">На любой вкус</a>
+      </div>
+      <article class="carusel">
+        <h2>ДРЕЛИ</h2>
+        <p>Соседям на радость!</p>
+        <a href="#" class="" button>Открыть Каталог</a>
+      </article>
+      <div class="category">
+        <h2>Скидки 50%</h2>
+        <img src="img/icon-4.svg" alt="">
+        <a href="#">На любой вкус</a>
+      </div>
+      <div class="category">
+        <h2>Доставка</h2>
+        <img src="img/icon-5.svg" alt="">
+        <a href="#">На любой вкус</a>
+      </div>
     </section>
     <section class="popular-items">
       <div>
@@ -162,24 +191,36 @@
 
     <section class="service">
       <h2 class="visually-hidden">Услуги логистики</h2>
+      <h3>Сервисы</h3>
+      <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <div>
-        <h3>Сервисы</h3>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <button type="button" class="button">Доставка</button>
+        <button type="button" class="button">Гарантия</button>
+        <button type="button" class="button">Кредит</button>
       </div>
-      <div>
-        <ul>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Кредит</a></li>
-        </ul>
-      </div>
-      <div>
+      <div class="delivery">
         <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно!
           Ведь мы неплохо заработаем,
           поднимая его на ваш этаж!</p>
+        <img src="img/gruzovik.png" alt="Изображение грузовика">
+      </div>
+      <div class="garanty">
+        <h3>ГАРАНТИЯ</h3>
+        <p>Если купленный у нас товар поломается или заискрит,
+          а также в случае пожара, спровоцированного его вогаранием, вы всегда можете быть уверены в нашей гарантии. Мы
+          обменяем сгоревший товар на новый.
+          Дом уж восстановите как нибудь сами.</p>
+        <img src="img/guarantee.png" alt="">
+      </div>
+      <div class="credit">
+        <h3>КРЕДИТ</h3>
+        <p>Залезть в долговую яму стало проще!
+          Кредитные консультанты придут вам на помощь.</p>
+        <img src="img/credit.jpg" alt="">
+        <a href="#" class="button">Отправить заявку</a>
       </div>
     </section>
 
@@ -279,7 +320,7 @@
       height="500">
     <button type="button" class="button-close">Крестик</button>
   </section>
-  
+
 </body>
 
 </html>

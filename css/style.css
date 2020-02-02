@@ -27,6 +27,7 @@ body {
     background-repeat: no-repeat;
     width: 500px;
     height: 300px;
+    color: #ffffff;
 }
 
 
@@ -66,4 +67,41 @@ input[type="radio"]:checked {
     background-size: 20px; 
     -webkit-appearance: none;
     border: none;
+}
+
+.sort-list-down:before{
+    content: url(../img/icon-down-dir.svg);
+}
+
+.sort-list-up:before {
+    content: url(../img/icon-up-dir.svg);
+}
+
+.by-list-active{
+    color: red;
+}
+
+.active-page{
+    background-color: red;
+    color: #fff;    
+}
+
+.search label:before{
+    content: url(../img/icon-search.svg);    
+}
+
+.category:nth-of-type(1), .category:nth-of-type(5) {
+    background-color: orange;
+}
+
+.category:nth-of-type(2) {
+    background-color: lightblue;
+}
+
+.category:nth-of-type(3) {
+    background-color: plum;
+}
+
+.category:nth-of-type(4) {
+    background-color: greenyellow;
 }
