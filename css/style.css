@@ -1,12 +1,93 @@
-* {
-    list-style: none;
+/* cuprum-regular - latin */
+@font-face {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/cuprum-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Cuprum Regular'), local('Cuprum-Regular'),
+         url('../fonts/cuprum-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/cuprum-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/cuprum-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/cuprum-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/cuprum-v11-latin-regular.svg#Cuprum') format('svg'); /* Legacy iOS */
+  }
+  /* cuprum-italic - latin */
+  @font-face {
+    font-family: 'Cuprum';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/cuprum-v11-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local('Cuprum Italic'), local('Cuprum-Italic'),
+         url('../fonts/cuprum-v11-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/cuprum-v11-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/cuprum-v11-latin-italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/cuprum-v11-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/cuprum-v11-latin-italic.svg#Cuprum') format('svg'); /* Legacy iOS */
+  }
+  /* cuprum-700 - latin */
+  @font-face {
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/cuprum-v11-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Cuprum Bold'), local('Cuprum-Bold'),
+         url('../fonts/cuprum-v11-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/cuprum-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/cuprum-v11-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/cuprum-v11-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/cuprum-v11-latin-700.svg#Cuprum') format('svg'); /* Legacy iOS */
+  }
+
+  /* pt-sans-regular - latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('PT Sans'), local('PTSans-Regular'),
+         url('../fonts/pt-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-sans-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-sans-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/pt-sans-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/pt-sans-v11-latin-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+  }
+  /* pt-sans-700 - latin */
+  @font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans-v11-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+         url('../fonts/pt-sans-v11-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-sans-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-sans-v11-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/pt-sans-v11-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/pt-sans-v11-latin-700.svg#PTSans') format('svg'); /* Legacy iOS */
+  }
+
+body {
+    background-color: #fff;    
+    font-family: Cuprum, sans-serif;
+    font-weight: normal;
+    font-stretch: normal;   
+    letter-spacing: normal;  
+    text-align: left; 
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;    
+  }
+
+a {
     text-decoration: none;
 }
 
-
-body {
-    background-color: #fff;
-    
+.header-up {
+    background-color:#293449;
 }
 
 #page-start {
@@ -22,14 +103,87 @@ body {
 
 }
 
-.carusel {
-    background-image: url(../img/carusel.png);
+.header-up a {
+    color: #ffffff;  
+    font-size: 17px;  
+    line-height: 1.06;
+    
+  }
+
+.info {
+    color: #ee3643;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;     
+}
+
+.phone-number {
+   color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;  
+}
+
+.adress{   
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #32425c;
+}
+
+.header-down ul{
+    list-style: none;
+}
+
+.login, .register {
+    font-size: 21px;
+    line-height: 21px;
+    color: #293449;
+}
+
+.login::before{   
+    width: 20px;
+    height: 17px;
+    content: url("../img/icon-login.svg");
+  
+}
+
+.site-navigation{
+    font-size: 17px;
+    line-height: 17px;    
+    background-color: #32425c;  
+}
+
+
+.site-navigation ul{
+    list-style: none;
+}
+
+.site-navigation a{
+    color: #ffffff;
+}
+
+.index-columns h2{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.carousel {
+    background-image: url(../img/carousel.png);
     background-repeat: no-repeat;
     width: 500px;
     height: 300px;
     color: #ffffff;
 }
 
+.search input[type="text"]{
+    background-color: #293449;
+}
+
+.search input[type="text"]::placeholder{
+  color: #ffffff;
+   font-size: 17px;
+  line-height: 1.06;
+}
 
 input[type="checkbox"] {    
     -webkit-appearance: none;
@@ -48,8 +202,6 @@ input[type="checkbox"]:checked {
     background: url(../img/checkbox-on.png) left center no-repeat;    
     background-size: 20px; 
 }
-
-
 
 input[type="radio"] {    
     -webkit-appearance: none;
@@ -86,6 +238,10 @@ input[type="radio"]:checked {
     color: #fff;    
 }
 
+.main-content {
+
+}
+
 .search label:before{
     content: url(../img/icon-search.svg);    
 }
@@ -105,3 +261,5 @@ input[type="radio"]:checked {
 .category:nth-of-type(4) {
     background-color: greenyellow;
 }
+
+

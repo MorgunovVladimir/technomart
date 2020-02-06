@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-
+  <header class="main-header">
     <section class="header-up">
-      <div class="wrapper">
-        <h1 class="page-title"></h1>
+      <div class="wrapper">       
         <div id="page-start">
-          <a href=""><img src="img/ТЕХНОМАРТ.svg" alt="ТЕХНОМАРТ"></a>
+          <a href=""><img src="img/ТЕХНОМАРТ.svg" alt="Надпись ТЕХНОМАРТ"></a>
         </div>
         <div class="search">
           <form action="#" method="get">
@@ -41,17 +42,22 @@
 
     <section class="header-down">
       <div class="wrapper">
-        <p>Интернет-магазин строительных материалови интсрументов для ремонта</p>
-        <p><span class="phone-number"><img src="img/icon-phone.svg"
-              alt="телефонный номер магазина">+7(812)555-05-55</span>
-          <span>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</span>
+        <div>
+        <p class="info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      </div>
+      <div>
+        <p><img src="img/icon-phone.svg" alt="телефонный номер магазина">
+          <span class="phone-number">+7(812)555-05-55</span>
         </p>
-        <img src="img/icon-login.svg" alt="кнопка Войти">
-        <!--  Тут делаю ссылки вместо кнопок, чтобы потом задать выпадание попапов с помощью JS, 
-          на случае если JS не срабатывает, ссылки направляют на отдельную страницу регистрации и входа  -->
-        <a href="login.html" class="button">Войти</a>
-        <a href="registration.html" class="button">Регистрация</a>
-        <nav>
+        <p class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>      
+      </div>
+      <div>
+        <ul>
+          <li class="login"><a href="login.html">Войти</a></li>
+          <li class="register"><a href="registration.html">Регистрация</a></li>        
+       </ul>
+      </div>
+        <nav class="site-navigation">
           <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="about.html">Компания</a></li>
@@ -65,7 +71,7 @@
       </div>
     </section>
   </header>
-  <main>
+  <main class="main-content">
     <h1 class="visually-hidden">Техномарт, интернет-магазин техники</h1>
     <section class="offers">
       <div class="category">
@@ -83,7 +89,7 @@
         <img src="img/icon-3.svg" alt="">
         <a href="#">На любой вкус</a>
       </div>
-      <article class="carusel">
+      <article class="carousel">
         <h2>ДРЕЛИ</h2>
         <p>Соседям на радость!</p>
         <a href="#" class="" button>Открыть Каталог</a>
@@ -101,7 +107,7 @@
     </section>
     <section class="popular-items">
       <div>
-        <h2>Популярные товары:</h2><a href="">Все популярные товары</a>
+        <h2>Популярные товары:</h2><a href="" class="button">Все популярные товары</a>
       </div>
       <div>
         <ul>
@@ -223,9 +229,9 @@
         <a href="#" class="button">Отправить заявку</a>
       </div>
     </section>
-
+    <div class="index-columns">
     <section class="about">
-      <h2>КОМПАНИЯ ТЕХНОМАРТ</h2>
+      <h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
       <p>Настоячщий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
         сторительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
       <p>Мы можем доставить Ваш товар в самые отдаленные точки России!<br>
@@ -243,6 +249,7 @@
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
       <img src="img/karta.png" alt="адрес магазина: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8">
     </section>
+  </div>
   </main>
   <footer>
     <section class="footer-up">
