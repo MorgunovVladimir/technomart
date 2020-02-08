@@ -72,6 +72,7 @@ body {
     font-stretch: normal;   
     letter-spacing: normal;  
     text-align: left; 
+    font-size: 18px;
 }
 
 .visually-hidden {
@@ -84,6 +85,8 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+    font-family: inherit;
 }
 
 .header-up {
@@ -134,25 +137,45 @@ a {
     list-style: none;
 }
 
+.button {
+    text-transform: uppercase;
+    background-color: #ee3643;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 14px;
+}
+
 .login, .register {
     font-size: 21px;
     line-height: 21px;
-    color: #293449;
+    color:  #000000;
+}
+
+.login::after{   
+    width: 20px;
+    height: 17px;
+    content: url("../img/icon-login.svg");  
 }
 
 .login::before{   
     width: 20px;
     height: 17px;
-    content: url("../img/icon-login.svg");
+    content: url("../img/icon-user.svg");
   
 }
-
 .site-navigation{
     font-size: 17px;
     line-height: 17px;    
     background-color: #32425c;  
 }
 
+
+
+.user-menu a {
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 1.13;
+}
 
 .site-navigation ul{
     list-style: none;
@@ -162,9 +185,66 @@ a {
     color: #ffffff;
 }
 
-.index-columns h2{
+.breadcrumbles {
+    list-style: none;
+    font-family: PT Sans, sans-serif;
+    font-size: 13px;    
+}
+
+.index-columns h2 {
     font-size: 30px;
     line-height: 30px;
+    font-weight: normal;    
+    font-stretch: normal;
+    font-style: normal;   
+    letter-spacing: normal;
+}
+
+.index-columns p {
+    font-family: PT Sans, sans-serif;
+    font-size: 13px;    
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #32425c;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.filters {
+    font-family: PT Sans, sans-serif; 
+    font-size: 17px; 
+    text-transform: uppercase;
+}
+
+.filters h2 {
+    font-size: 17px;
+}
+
+.filters__brand, .filters__supply {
+    font-size: 15px;
+}
+
+.sorting {
+    font-family: PT Sans, sans-serif; 
+    font-size: 13px; 
+    text-transform: uppercase;
+}
+
+.sorting__list {
+    list-style: none;
+}
+
+.offers {
+    font-size: 14px;
+}
+
+.offers h2 {
+    font-size: 24px;
 }
 
 .carousel {
@@ -173,6 +253,11 @@ a {
     width: 500px;
     height: 300px;
     color: #ffffff;
+    font-size: 18px;
+}
+
+.carousel h2 {
+    font-size: 36px;
 }
 
 .search input[type="text"]{
@@ -238,8 +323,71 @@ input[type="radio"]:checked {
     color: #fff;    
 }
 
-.main-content {
 
+
+.items {
+    font-family: PT Sans, sans-serif;
+    font-size: 17px;
+    font-weight: bold;  
+}
+
+.items h3{
+    font-size: 18px;
+}
+
+.items__list {
+    list-style: none;
+}
+
+.catalog {
+    font-family: PT Sans, sans-serif;
+    font-size: 17px;
+    font-weight: bold;  
+}
+
+.catalog h3 {
+    font-size: 18px;
+}
+
+.catalog__list{
+    list-style: none;
+}
+
+.pagination {
+    font-family: PT Sans, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.pagination ul {
+    list-style: none;
+}
+
+.catalog-about {
+    font-family: PT Sans, sans-serif;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.catalog-about h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.about ul {
+    list-style: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.popular-brands__list {
+list-style: none;
+}
+
+.service p {
+    font-family: PT Sans, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
 }
 
 .search label:before{
@@ -261,5 +409,32 @@ input[type="radio"]:checked {
 .category:nth-of-type(4) {
     background-color: greenyellow;
 }
+.footer-up {
+    color: #ffffff;
+}
 
+.footer-nav {
+    list-style: none;
+}
 
+.wheat {     
+    line-height: 1.333;
+    color: #e4be7b;
+}
+
+.footer-down {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.social__list {
+    list-style: none;
+}
+
+.modal-login {
+    font-weight: bold;
+}
+
+.modal-login input::placeholder , .modal-login textarea::placeholder{
+    font-size: 13px;
+}
