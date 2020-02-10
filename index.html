@@ -77,18 +77,17 @@
       <section class="offers">
         <div class="category">
           <h2>Материалы</h2>
-          <img src="img/icon-1.svg" alt="">
-          <a href="#">На любой вкус</a>
+          <a href="#" class="offers__button">На любой вкус</a>
         </div>
         <div class="category">
           <h2>Инструмент</h2>
           <img src="img/icon-2.svg" alt="">
-          <a href="#">На любой вкус</a>
+          <a href="#" class="offers__button">На любой вкус</a>
         </div>
         <div class="category">
           <h2>Техника</h2>
           <img src="img/icon-3.svg" alt="">
-          <a href="#">На любой вкус</a>
+          <a href="#" class="offers__button">На любой вкус</a>
         </div>
         <article class="carousel">
           <h2>ДРЕЛИ</h2>
@@ -96,15 +95,15 @@
           <a href="#" class="button">Открыть Каталог</a>
         </article>
         <div class="offers__column">
-          <div class="category">
+          <div>
             <h2>Скидки 50%</h2>
             <img src="img/icon-4.svg" alt="">
-            <a href="#">На любой вкус</a>
+            <a href="#" class="offers__button">На любой вкус</a>
           </div>
-          <div class="category">
+          <div>
             <h2>Доставка</h2>
             <img src="img/icon-5.svg" alt="">
-            <a href="#">На любой вкус</a>
+            <a href="#" class="offers__button">На любой вкус</a>
           </div>
         </div>
       </section>
@@ -233,7 +232,7 @@
           <h2>КОНТАКТЫ</h2>
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
-          <img src="img/karta.png" alt="адрес магазина: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8">
+          <img src="img/map.jpg" alt="адрес магазина: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8">
           <a href="" class="feedback-button">Заблудились? Напишите нам!</a>
         </section>
       </div>
@@ -290,11 +289,11 @@
       </div>
     </section>
   </footer>
-  <section class="modal modal-login">
+  <section class="modal modal-feedback">
     <form action="">
       <div>
         <label for="user-login">Ваше имя: </label><br>
-        <input type="text" placeholder="Ваше имя" id="user-login">
+        <input type="text" placeholder="Имя Фамилия" id="user-login">
       </div>
       <div>
         <label for="user-email">Ваш e-mail: </label><br>
@@ -304,13 +303,15 @@
         <label for="message">Текст письма</label><br>
         <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="button" class="button">Отправить</button>
+      <div>
+        <button type="button" class="button">Отправить</button>
+      </div>      
     </form>
-    <button type="button" class="button-close">Крестик</button>
+    <button type="button" class="button-cross">Крестик</button>
   </section>
   <section class="modal modal-map">
-    <img src="img/karta.png" alt="адрес магазина: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8" width="1000"
-      height="500">
+    <img src="img/map.png" alt="адрес магазина: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8" width="940"
+      height="446.2">
     <button type="button" class="button-close">Крестик</button>
   </section>
 
