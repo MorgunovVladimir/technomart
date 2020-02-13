@@ -83,8 +83,10 @@
   }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #fff;    
-    font-family: Cuprum, sans-serif;
+    font-family: 'Cuprum', sans-serif;
     font-weight: normal;
     font-stretch: normal;   
     letter-spacing: normal;  
@@ -131,6 +133,7 @@ a {
 .main-header__up {
     background-color:#293449;
     margin-bottom: 46px;
+    height: 42px;
 }
 
 .main-header__down {    
@@ -165,61 +168,43 @@ a {
 
 .bookmarks,
 .basket,
-.order {    
-    position: relative;  
+.order {         
     width: 150px;
     height: 42px;
-    text-align: center;
-    padding: 12px 22px 12px 20px;
-    line-height: 18px;
+    text-align: center;    
+    line-height: 1.06;
     font-weight: 400;
     font-style: normal;
+    text-align: left;   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.basket {
-    background-color: #ee3643;
+.main-header__up-icon {
+    fill: #ffffff;   
 }
 
 .order {
-    background-color: #63a63e;
+    background-color: #63a63e;    
 }
 
-.bookmarks::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    background: url(../img/icon-bookmark.svg) no-repeat;     
-}
-
-.basket::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    background: url(../img/cart-icon.svg) no-repeat;   
-}
- 
-
-
-.logo-top {
+.main-header__up-logo {
     width: 220px;
-    height: 47px;
+    height: 42px;
     background-color: #ee3643;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 0 5px 0 0 #b52933;
+    display: inline-block;
+    padding: 13px 56px 15px 55px;
 }
 
-.logo-bottom {
+.footer-up__logo {
     width: 220px;
     height: 68px;
     background-color: #ee3643;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    display: inline-block;
+    padding: 20px 41px 25px;
 }
 
 
@@ -450,12 +435,6 @@ flex-wrap: wrap;
     color: #32425c;
 }
 
-
-.search label:before{
-    content: url(../img/icon-search.svg);    
-}
-
-
 .offers {
     display: flex;
     flex-wrap: wrap;
@@ -475,7 +454,7 @@ flex-wrap: wrap;
     font-size: 24px;
 }
 
-.offers__button {
+.offers__category-button {
     width: 135px;
     height: 38px;
     opacity: 0.1;
@@ -485,7 +464,7 @@ flex-wrap: wrap;
    
 
 
-.carousel {
+.offers__category-carousel {
     background-image: url(../img/carousel.png);
     background-repeat: no-repeat;
     width: 620px;
@@ -494,28 +473,28 @@ flex-wrap: wrap;
     font-size: 18px;
 }
 
-.carousel h2 {
+.offers__category-carousel h2 {
     font-size: 36px;
 }
 
-.category {   
+.offers__category {   
     width: 300px;
     min-height: 123px;
     margin-bottom: 20px;
     padding: 20px;     
 }
 
-.category:nth-of-type(1) {
+.offers__category:nth-of-type(1) {
     background-color: #ffbf47;
     background-image: url(../img/icon-1.svg);    
     background-repeat: no-repeat;    
 }
 
-.category:nth-of-type(2) {
+.offers__category:nth-of-type(2) {
     background-color: #3bbce3;
 }
 
-.category:nth-of-type(3) {
+.offers__category:nth-of-type(3) {
     background-color: #dc91d8;
 }
 
@@ -587,6 +566,10 @@ flex-wrap: wrap;
     font-size: 18px;   
     margin: 0px;
     margin-bottom: 15px;
+}
+
+.hidden {
+    min-height: 20px;   
 }
 
  .new-item::after {
@@ -712,6 +695,10 @@ flex-wrap: wrap;
 .footer-up{
     background-color:#32425c;
     color: #ffffff;
+    line-height: 1.33;
+    /* line-height: 24px; */
+    font-weight: 400;
+    font-style: normal;
 }
 
 .footer-down {
@@ -721,16 +708,17 @@ flex-wrap: wrap;
 
 .footer-nav {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0;  
     margin-left: 0;
     display: flex;
     justify-content: space-around; 
-    outline: 1px solid red;
+  
 }
 
-.footer-nav li{
+.footer-nav li:not(:first-child){
     margin-left: 60px;
 }
+
 
 .footer-up .container-top {
     display: flex;
@@ -926,13 +914,31 @@ flex-wrap: wrap;
     list-style: none;
     display: flex;    
     justify-content: space-around;
-    outline: 1px solid red;  
+    
 }
 
+.search {
+    position: relative;
+     width: 1280px;
+    height: 42px;    
+}
 
+.search-label svg{
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    z-index: 20;
+    width: 20px;
+    height: 20px;        
+    cursor: pointer;
+}
 
-.search input[type="text"]{
+.search input[type="text"]{   
+    border: none;
     background-color: #293449;
+    width: 100%;
+    padding: 11px 142px 11px 49px;
+    cursor: pointer;   
 }
 
 .search input[type="text"]::placeholder{
@@ -1009,7 +1015,7 @@ input[type="radio"]:checked {
     list-style: none;
     display: flex;    
     padding-left: 0;
-    outline: 1px solid red;    
+     
 }
 
 

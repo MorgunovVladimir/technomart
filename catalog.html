@@ -14,30 +14,50 @@
   <header class="main-header">
     <section class="main-header__up">
       <div class="wrapper container">
-        <div id="page-start" class="logo-top">
-          <a href=""><img src="img/ТЕХНОМАРТ.svg" alt="Надпись ТЕХНОМАРТ"></a>
+        <div id="page-start">
+          <a href="" class="main-header__up-logo"><img src="img/ТЕХНОМАРТ.svg" alt="Надпись ТЕХНОМАРТ" width="109"
+              height="19"></a>
         </div>
         <div class="search">
           <form action="#" method="get">
-            <label aria-placeholder="Поиск">
+            <label aria-placeholder="Поиск" class="search-label">
+              <svg class="main-header__up-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17"
+                xml:space="preserve">
+                <g id="Layer_1">
+                </g>
+                <g id="Layer_2">
+                  <path fill="#231F20" d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
+		C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
+		C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z" />
+                </g>
+              </svg>
               <input type="text" name="search" placeholder="Поиск:">
             </label>
           </form>
         </div>
-        <div>
-          <a href="bookmarks.html">
-            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="16px" viewBox="0 0 14 16"
-              enable-background="new 0 0 14 16" xml:space="preserve">
-              <path fill="#E72C2D" d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
-           C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z" />
-            </svg>
+        <div class="main-header__up-actions">
+          <a href="bookmarks.html" class="bookmarks">
+            <svg class="main-header__up-icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+         <path fill="#E72C2D" d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+           C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
+         </svg>
             Закладки: 0</a>
-          <img src="img/cart-icon.svg" alt="корзина">
-          <a href="basket.html">Корзина: 0</a>
-          <a href="order.html">Оформить заказ</a>
+          <a href="basket.html" class="basket">
+            <svg class="main-header__up-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+         <g>
+           <circle cx="4.5" cy="13.5" r="1.5"/>
+           <circle cx="12.5" cy="13.5" r="1.5"/>
+           <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+         </g>
+         </svg>
+         Корзина: 0</a>
+          <a href="order.html" class="order">Оформить заказ</a>
         </div>
     </section>
+
     <section class="main-header__down">
       <div class="wrapper container">
         <p class="info">Интернет-магазин<br>
@@ -193,6 +213,9 @@
                   BFG 2000
                 </h3>
                 <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <span class="hidden"> 
+                  &nbsp              
+                </span>
                 <a href="#" class="item-button">12500 Р.</a>
               </li>
               <li class="items__list-item">
@@ -237,6 +260,9 @@
                   BFG 2000
                 </h3>
                 <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <span class="hidden"> 
+                  &nbsp              
+                </span>
                 <a href="#" class="item-button">12500 Р.</a>
               </li>
               <li class="items__list-item">
@@ -281,6 +307,9 @@
                   BFG 2000
                 </h3>
                 <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <span class="hidden"> 
+                  &nbsp              
+                </span>
                 <a href="#" class="item-button">12500 Р.</a>
               </li>
             </ul>
@@ -314,7 +343,8 @@
     <section class="footer-up">
       <div class="wrapper">
         <div class="container-top">
-          <div class="logo-bottom"><a href="#page-start"><img src="img/ТЕХНОМАРТ.svg" alt="надпись ТЕХНОМАРТ"></a></div>
+          <div><a href="#page-start" class="footer-up__logo"><img src="img/ТЕХНОМАРТ.svg" alt="надпись ТЕХНОМАРТ"
+                width="138" height="23"></a></div>
           <ul class="footer-nav">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -340,14 +370,14 @@
     <section class="footer-down">
       <div class="wrapper container">
         <div>
-          <p>2010-2017 Компания "Техномарт"</p>
-          <p>Все права защищены</p>
+          2010-2017 Компания "Техномарт"</br>
+          Все права защищены
         </div>
         <div class="social">
           <ul class="social__list">
-            <li><a href=""><img src="img/vk-icon.svg" alt="vk"></a></li>
-            <li><a href=""></a><img src="img/fb-icon.svg" alt="facebook"></a></li>
-            <li><a href=""></a><img src="img/insta-icon.svg" alt="instagramm"></a></li>
+            <li><a href=""><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li>
+            <li><a href=""><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a></li>
+            <li><a href=""><img src="img/insta-icon.svg" alt="instagramm" width="21" height="21"></a></li>
           </ul>
         </div>
         <div class="copyright">
@@ -360,6 +390,27 @@
         </div>
       </div>
     </section>
+  </footer>
+  <section class="modal modal-feedback">
+    <form action="">
+      <div>
+        <label for="user-login">Ваше имя: </label><br>
+        <input type="text" placeholder="Имя Фамилия" id="user-login">
+      </div>
+      <div>
+        <label for="user-email">Ваш e-mail: </label><br>
+        <input type="email" placeholder="email@example.com " id="user-email">
+      </div>
+      <p>
+        <label for="message">Текст письма</label><br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <div>
+        <button type="button" class="button">Отправить</button>
+      </div>
+    </form>
+    <button type="button" class="button-cross">Крестик</button>
+  </section>
   </footer>
 
 </body>
