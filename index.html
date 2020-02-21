@@ -26,7 +26,7 @@
         <div class="search">
           <form action="#" method="get">
             <label class="search-label">
-              <svg class="main-header__up-icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px"
                 viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
                 <g>
@@ -43,7 +43,7 @@
         </div>
         <div class="main-header__up-actions">
           <a href="bookmarks.html" class="bookmarks">
-            <svg class="main-header__up-icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="16px" viewBox="0 0 14 16"
               enable-background="new 0 0 14 16" xml:space="preserve">
               <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
@@ -51,7 +51,7 @@
             </svg>
             Закладки: 0</a>
           <a href="basket.html" class="basket">
-            <svg class="main-header__up-icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15"
               enable-background="new 0 0 15 15" xml:space="preserve">
               <g>
@@ -78,22 +78,20 @@
           </div>
           <span class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</span>
         </div>
-        <div>
-          <ul class="main-header__down-user">
-            <li><a href="login.html" class="login">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px"
-                  viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
-                  <g>
-                    <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	" />
-                  </g>
-                  <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
-             v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z" />
-                </svg>
-                Войти</a></li>
-            <li><a href="registration.html" class="register">Регистрация</a></li>
-          </ul>
-        </div>
+        <div class="main-header__down-user">         
+            <a href="login.html" class="login">
+            <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px"
+              viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+              <g>
+                <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	" />
+              </g>
+              <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+         v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z" />
+            </svg>
+            Войти</a>   
+        <a href="registration.html" class="register">Регистрация</a>       
+                </div>
       </div>
       <nav class="wrapper">
         <ul class="site-navigation">
@@ -103,7 +101,7 @@
           <li><a href="news.html">Новости</a></li>
           <li><a href="promo.html">Спецпредложения</a></li>
           <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>          
         </ul>
       </nav>
     </section>
@@ -389,9 +387,11 @@
       </div>
     </section>
   </footer>
+
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <form action="#" method="post" class="modal-feedback-form">      
+    <form action="#" method="post" class="modal-feedback-form"> 
+        <div class="modal-body">
         <label>
           <span>Ваше имя:</span><br>
         <input type="text" placeholder="Имя Фамилия">
@@ -404,12 +404,18 @@
           <span>Текст письма</span><br>
         <textarea name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </label>
+    </div>     
       <div class="modal-feedback-buttonback">
         <button type="button" class="button">Отправить</button>
       </div>
     </form>
     <button type="button" class="button-close"></button>
   </section>
+
+
+
+
+
   <section class="modal modal-map">
     <h2 class="visually-hidden">Карта маршрута до нашего магазина</h2>
     <img src="img/map.png" alt="адрес магазина: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8" width="940"

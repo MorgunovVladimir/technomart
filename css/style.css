@@ -101,6 +101,8 @@ body {
     width: 1px;
     height: 1px;
     margin: -1px;    
+    margin: -1px; 
+    font-size: 0;   
   }
   
 
@@ -132,9 +134,9 @@ a {
 }
 
 .site-navigation a{
-    display: block;
+    display: inline-block;
     color: #ffffff;   
-    padding: 20px 31px 26px 31px;   
+    padding: 20px 31px 26px 31px; 
 
 }
 
@@ -156,9 +158,9 @@ a {
 }
 
 .main-header__up {
-    background-color:#293449;
-    margin-bottom: 46px;
+    background-color:#293449;    
     height: 42px;
+    margin-bottom: 46px;
 }
 
 .main-header__up .container {
@@ -179,25 +181,20 @@ a {
 
 .bookmarks,
 .basket,
-.order {       
+.order {   
+    position: relative;    
     width: 150px;
     height: 42px;
     text-align: center;    
-    line-height: 1.06;
+    line-height: 1;
     font-weight: 400;
     font-style: normal;
-    text-align: left;     
+    text-align: left; 
+     
 }
 
-.search:hover input[type="text"],
-.bookmarks:hover,
-.basket:hover {
-    background-color: #212a3a;
-}
-
-.bookmarks:active,
-.basket:active {
-    background-color: #161d29;
+.bookmarks {
+    padding: 12px 27px 13px 44px ;       
 }
 
 .order {
@@ -206,22 +203,13 @@ a {
 }
 
 .basket {
-    background-color: #ee3643;  
-    padding: 11px 21px 12px 18px ;       
+    padding: 12px 25px 13px 50px ; 
 }
 
-.basket svg {
-    margin-right: 13px;
+.basket-active {
+    background-color: #ee3643;   
 }
 
-.bookmarks svg {
-    margin-top: 2px;
-    margin-right: 10px;s
-}
-
-.bookmarks {
-    padding: 8px 24px 15px 18px ;       
-}
 
 .order:hover {
     background-color: #5fbb2d;
@@ -231,21 +219,46 @@ a {
     background-color: #518534;
 }
 
-.main-header__up-icon {
+.icon {
+    position: absolute;    
+}
+
+.main-header__up  .icon {
     fill: #ffffff;  
     opacity: 0.3; 
 }
 
-.search:hover .main-header__up-icon,
-.bookmarks:hover .main-header__up-icon,
-.basket:hover .main-header__up-icon{
+.bookmarks .icon {
+    top: 12px;
+    left: 17px;
+}
+
+.basket .icon {
+    top: 12px;
+    left: 18px;
+}
+
+.search:hover .icon,
+.bookmarks:hover .icon,
+.basket:hover .icon{
      opacity: 1;
  }
 
-.bookmarks:active .main-header__up-icon,
-.basket:active .main-header__up-icon{
+.bookmarks:active .icon,
+.basket:active .icon{
      opacity: 0.3;
  }
+
+.search:hover input[type="text"],
+.bookmarks:hover,
+.basket:hover {
+    background-color: #212a3a;
+}
+
+.bookmarks:active,
+.basket:active {
+    background-color: #161d29; 
+}
 
 
 .main-header__up-logo {
@@ -268,8 +281,7 @@ a {
 
 
 .main-header__down .container {
-    display: flex;
-    justify-content: space-between;  
+    display: flex; 
     margin-bottom: 43px;   
   }
 
@@ -287,21 +299,20 @@ a {
     font-size: 16px;
     line-height: 23px;
     font-style: italic; 
-    margin-top: 4px;
+    margin-top: 3px;
     margin-left: 52px;
     margin-right: 71px;
 }
 
 .main-header__down-phone-number {
   position: relative;
-   padding: 11px 52px 11px 65px;
+   padding: 10px 46px 10px 72px;
   color: #ee3643;
   font-size: 21px;
   line-height: 1; 
   border: 3px solid #ffffff;
   width: 270px;
-  height: 45px; 
-  margin-right: 51px; 
+  height: 45px;   
   margin-bottom: 7px;
 }
 
@@ -328,11 +339,12 @@ a {
  
 }
 
-.main-header__down-user {
-    display: flex;
+.main-header__down-user {  
+    display: flex;  
 }
 
 .login, .register {
+    position: relative;
     background-color: #fff;
     font-size: 21px;
     line-height: 21px;
@@ -346,20 +358,20 @@ a {
     position: relative;
     width: 121px;
     height: 45px;
+    margin-left: 69px;
     margin-right: 10px;
-    padding: 14px 27px 15px 48px ;
+    padding: 12px 27px 12px 48px ;
 }
 
 .register {    
     width: 150px;
     height: 45px;
-    padding: 14px 25px 11px 25px ;
+    padding: 12px 25px 12px 25px ;
 }
 
-.login svg{
-    position: absolute;
+.login .icon{    
     left: 14px;
-    right: 14px;
+    top: 14px;
     width: 20px;
     height: 17px;
     fill: #c5c5c5;
@@ -1178,15 +1190,21 @@ margin-bottom: 85px;
     width: 620px;
     height: 430px;
     margin: 0 auto;    
-    padding: 74px 80px 37px;   
+    
     border-top: 7px solid #ee3643;
 }
 
 .modal-feedback-form {
+    outline: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
  }
+
+ .modal-body {
+    padding: 74px 80px 37px;   
+ }
+
 
 .modal-feedback input {
     width: 220px;
@@ -1246,25 +1264,38 @@ a.loged {
     line-height: 1;
     color:  #000000;
     width: 299px;
-    height: 45px;        
+    height: 45px;       
     display: inline-block;
     vertical-align: middle;    
     text-decoration: none;
-    padding: 14px 8px 14px 13px;   
+    margin-left: 51px;   
+    padding: 12px 65px 12px 47px;   
 } 
 
-.loged svg {
+.loged .icon {
     fill: #c5c5c5;  
 }
 
-.loged span {   
-    margin-left: 9px;
-    margin-right: 31px;
-    
-} 
+.loged .icon:first-of-type {
+    top: 13px;
+    left: 13px;
+}
 
-.loged:hover svg {
+.loged .icon:last-of-type {
+    top: 14px;
+    right: 10px;
+}
+
+.loged:hover .icon {
     fill: #32425C;
+}
+
+.loged:active .icon {
+    fill: rgba(0, 0, 0, 0.3)
+}
+
+.loged:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .information {  
@@ -1281,19 +1312,6 @@ a.loged {
     height: 5px;
     background-color: #32425c;
 }
-
-/* .loged::after{   
-    width: 20px;
-    height: 17px;
-    content: url("../img/icon-login.svg");  
-} */
-
-/* .loged::before{   
-    width: 20px;
-    height: 17px;
-    content: url("../img/icon-user.svg");
-  
-} */
 
 
 .breadcrumbles {
@@ -1441,9 +1459,11 @@ left: 96px;
 
 .search input[type="text"]::placeholder{
   color: #ffffff;
-   font-size: 17px;
+  font-size: 17px;
   line-height: 1.06;
 }
+
+
 
 input[type="checkbox"] {    
     -webkit-appearance: none;
