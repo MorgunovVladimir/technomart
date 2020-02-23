@@ -70,9 +70,11 @@
     <section class="main-header__down">
       <h2 class="visually-hidden">Техномарт, интернет-магазин инструментов и техники. Контакты и навигация по сайту</h2>
       <div class="wrapper container">
-        <div class="main-header__down-info">Интернет-магазин<br>
-          строительных материалов<br>
-          и инструментов для ремонта</div>
+        <div class="main-header__down-info">
+          Интернет-магазин<br>
+            строительных материалов<br>
+            <span class="nowrap">и инструментов для ремонта</span>     
+          </div>
         <div>
           <div class="main-header__down-phone-number">
             <a href="tel:+78125550555" class="number">+7 (812) 555-05-55</a>
@@ -98,9 +100,9 @@
          </svg>
          </a>
           <div class="information">
-            <a href="">Мои заказы</a>
+            <a href="" class="myorders">Мои заказы</a>
             <span class="point"></span>
-            <a href="">Личный кабинет</a>
+            <a href="" class="cabinet">Личный кабинет</a>
           </div>
         </div>
       </div>
@@ -260,7 +262,7 @@
                   15500 Р.
                 </a>
               </li>
-              <li class="items__list-item">
+              <li class="items__list-item new-item">
                 <div class="items__list-item-actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -275,7 +277,7 @@
                 </span>
                 <a href="#" class="item-button">25500 Р.</a>
               </li>
-              <li class="items__list-item new-item">
+              <li class="items__list-item">
                 <div class="items__list-item-actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -290,7 +292,7 @@
                 </span>
                 <a href="#" class="item-button">12500 Р.</a>
               </li>
-              <li class="items__list-item">
+              <li class="items__list-item new-item">
                 <div class="items__list-item-actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -322,7 +324,7 @@
                 </span>
                 <a href="#" class="item-button">25500 Р.</a>
               </li>
-              <li class="items__list-item new-item">
+              <li class="items__list-item">
                 <div class="items__list-item-actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -412,13 +414,27 @@
             <a href="" class="wheat">mail@htmlacademy.ru</a>
           </div>
           <div>Разработано -<br>
-            <a href="" class="wheat">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="wheat">htmlacademy.ru</a>
           </div>
         </div>
       </div>
     </section>
   </footer>
 
+
+  <section class="modal modal-basket">
+    <h2 class="visually-hidden">Добавление товара в корзину</h2>
+    <div>
+      <h3>Товар добавлен в корзину!</h3>
+    </div>
+    <div class="buttonback">
+    <a href="" class="button">ОФОРМИТЬ ЗАКАЗ</a>
+    <button type="button" class="button continue">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+  </div>
+  <button type="button" class="button-close"></button>
+  </section>
+
+  <script src="js/modal-basket.js"></script>
 </body>
 
 </html>

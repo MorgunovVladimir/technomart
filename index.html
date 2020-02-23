@@ -71,7 +71,8 @@
       <div class="wrapper container">
         <div class="main-header__down-info">Интернет-магазин<br>
           строительных материалов<br>
-          и инструментов для ремонта</div>
+          <span class="nowrap">и инструментов для ремонта</span>
+        </div>
         <div>
           <div class="main-header__down-phone-number">
             <a href="tel:+78125550555" class="number">+7 (812) 555-05-55</a>
@@ -110,35 +111,39 @@
     <div class="wrapper">
       <h1 class="visually-hidden">Техномарт, интернет-магазин инструментов и техники. Ассортимент продукции и Услуги</h1>
       <section class="offers">
-        <div class="offers__category">
-          <h2>Материалы</h2>
-          <a href="#" class="offers__category-button">На любой вкус</a>
-        </div>
-        <div class="offers__category">
-          <h2>Инструмент</h2>
-          <a href="#" class="offers__category-button">На все случаи</a>
-        </div>
+        <div class="offers__column">
+          <div class="offers__category new">
+            <h2>Материалы</h2>
+            <a href="#" class="offers__category-button">На любой вкус</a>
+          </div>
+          <div class="offers__category">
+            <h2>Инструмент</h2>
+            <a href="#" class="offers__category-button">На все случаи</a>
+          </div>
+          <article class="offers__category-carousel start">
+            <h2 class="offers__category-carousel-heading">Дрели</h2>
+            <span class="offers__category-carousel-description">Соседям на радость!</span><br> 
+            <span class="arrowleft"></span>         
+            <span class="arrowright"></span> 
+            <a href="catalog.html" class="button">Открыть Каталог</a>
+          </article>
+      </div>
+        <div class="offers__column">
         <div class="offers__category">
           <h2>Техника</h2>
           <a href="#" class="offers__category-button">Для стройки</a>
-        </div>
-        <article class="offers__category-carousel">
-          <h2>ДРЕЛИ</h2>
-          <span>Соседям на радость!</span><br>          
-          <a href="#" class="button">Открыть Каталог</a>
-        </article>
-        <div class="offers__column">
-          <div class="offers__column-category">
+        </div>        
+           <div class="offers__category">
             <h2>Скидки 50%</h2>
             <a href="#" class="offers__category-button">На 350 товаров</a>
           </div>
-          <div class="offers__column-category">
+          <div class="offers__category">
             <h2>Доставка</h2>
             <a href="#" class="offers__category-button">Бесплатно</a>
           </div>
-        </div>      
-        
-      </section>
+       </div> 
+         </section>
+
       <section>
         <div class="popular-goods">
           <h2>Популярные товары:</h2><a href="" class="button">Все популярные товары</a>
@@ -274,9 +279,9 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="container">
           <div class="service-buttons">
-            <button type="button" class="service__back service__active ">Доставка</button>
-            <button type="button" class="service__back">Гарантия</button>
-            <button type="button" class="service__back">Кредит</button>
+            <button type="button" class="delivery-button service__back service__active ">Доставка</button>
+            <button type="button" class="garanty-button service__back">Гарантия</button>
+            <button type="button" class="credit-button service__back">Кредит</button>
           </div>
           <div class="delivery">
             <h4>Доставка</h4>
@@ -326,9 +331,12 @@
           <h2>КОНТАКТЫ</h2>
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
-          <img src="img/map.jpg" alt="адрес магазина: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8" width="300"
-            height="158">
-          <a href="" class="button">Заблудились? Напишите нам!</a>
+            <p class="map-back">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124025!2d30.320894616175977!3d59.93879686904785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1582479692124!5m2!1sru!2sru" width="300" height="158" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              <a href="#" class="map-link"><img src="img/map.jpg" alt="адрес магазина: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8" width="300"
+                height="158"></a>
+            </p>          
+          <a href="" class="button feedback-button">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
@@ -343,7 +351,7 @@
           <ul class="footer-nav first">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
@@ -381,7 +389,7 @@
             <a href="" class="wheat">mail@htmlacademy.ru</a>
           </div>
           <div>Разработано -<br>
-            <a href="" class="wheat">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="wheat">htmlacademy.ru</a>
           </div>
         </div>
       </div>
@@ -394,25 +402,23 @@
         <div class="modal-body">
         <label>
           <span>Ваше имя:</span><br>
-        <input type="text" placeholder="Имя Фамилия">
+        <input type="text" placeholder="Имя Фамилия" required>
       </label>     
         <label >
           <span>Ваш e-mail: </span><br>
-        <input type="email" placeholder="email@example.com " >
+        <input type="email" placeholder="email@example.com" required>
       </label>      
         <label >
           <span>Текст письма</span><br>
-        <textarea name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
       </label>
     </div>     
-      <div class="modal-feedback-buttonback">
-        <button type="button" class="button">Отправить</button>
+      <div class="buttonback">
+        <button type="submit" class="button">Отправить</button>
       </div>
     </form>
     <button type="button" class="button-close"></button>
   </section>
-
-
 
 
 
@@ -423,6 +429,22 @@
     <button type="button" class="button-close"></button>
   </section>
 
+  <section class="modal modal-basket">
+    <h2 class="visually-hidden">Добавление товара в корзину</h2>
+    <div>
+      <h3>Товар добавлен в корзину!</h3>
+    </div>
+    <div class="buttonback">
+    <a href="" class="button">ОФОРМИТЬ ЗАКАЗ</a>
+    <button type="button" class="button continue">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+  </div>
+  <button type="button" class="button-close"></button>
+  </section>
+
+  <script src="js/carousel.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/modal-basket.js"></script>
 </body>
 
 </html>
