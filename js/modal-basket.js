@@ -5,7 +5,7 @@ let close2 = document.querySelector(".continue")
 
 buyButton.forEach(element => {
     element.addEventListener('click', function(evt){
-        evt.preventDefault();
+        evt.preventDefault();       
         basketPopup.classList.add("modal-show");      
     });
 });

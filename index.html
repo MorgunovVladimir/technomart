@@ -125,6 +125,8 @@
             <span class="offers__category-carousel-description">Соседям на радость!</span><br> 
             <span class="arrowleft"></span>         
             <span class="arrowright"></span> 
+            <span class="dot dot-active"></span>         
+            <span class="dot"></span> 
             <a href="catalog.html" class="button">Открыть Каталог</a>
           </article>
       </div>
@@ -402,15 +404,15 @@
         <div class="modal-body">
         <label>
           <span>Ваше имя:</span><br>
-        <input type="text" placeholder="Имя Фамилия" required>
+        <input type="text" name="name" placeholder="Имя Фамилия" >
       </label>     
         <label >
           <span>Ваш e-mail: </span><br>
-        <input type="email" placeholder="email@example.com" required>
+        <input type="email" name="email" placeholder="email@example.com" >
       </label>      
         <label >
           <span>Текст письма</span><br>
-        <textarea name="message" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="В свободной форме" ></textarea>
       </label>
     </div>     
       <div class="buttonback">
@@ -443,8 +445,8 @@
 
   <script src="js/carousel.js"></script>
   <script src="js/service.js"></script>
-  <script src="js/feedback.js"></script>
-  <script src="js/modal-basket.js"></script>
+  <script src="js/modals.js"></script>
+
 </body>
 
 </html>
