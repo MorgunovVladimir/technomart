@@ -119,18 +119,18 @@ a {
 
 .site-navigation{ 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    width: 940px;
-    height: 57px;    
+    width: 940px;     
     padding:0;
     margin: 0;  
     font-size: 0;    
     line-height: 1px;    
     background-color: #32425c; 
     margin: 0; 
-    padding-left: 0;
+    padding-left: 21px;
+    padding-right: 21px;
     text-align: center;
     box-shadow: inset 0px -5px 0 0 #293449;    
     margin-bottom: 60px;
@@ -142,7 +142,7 @@ a {
     margin: 0;
     vertical-align: middle;
     color: #ffffff;   
-    padding: 22px 31px;   
+    padding: 30px 29px;   
 }
 
 .site-navigation a:hover{
@@ -170,7 +170,7 @@ a {
 
 .main-header__up .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -195,7 +195,7 @@ a {
     font-weight: 400;
     font-style: normal;
     text-align: left; 
-     
+    white-space: nowrap;     
 }
 
 .bookmarks {
@@ -246,6 +246,8 @@ a {
 .search {
     position: relative;
     height: 42px;    
+    margin-right: auto;
+    flex-grow: 1;
 }
 
 .search-label svg{
@@ -262,14 +264,24 @@ a {
     border: none;
     background-color: #293449;
     width: 100%;
-    padding: 11px 142px 11px 49px;
-    cursor: pointer;   
+    padding: 11px 10px 10px 49px;
+    cursor: pointer;  
+    color: #ffffff;
 }
 
 .search input[type="text"]::placeholder{
   color: #ffffff;
   font-size: 17px;
   line-height: 1.06;
+}
+
+.search input[type="text"]:focus  {
+    background-color: #fff;  
+    color: #000;
+}
+
+.search input[type="text"]:focus::placeholder{    
+    color: #000;
 }
 
 
@@ -331,6 +343,7 @@ a {
 .main-header__down-info {  
     color: #ee3643;
     font-size: 16px;
+    width: 197px;
     line-height: 23px;
     font-style: italic; 
     margin-top: 3px;
@@ -815,17 +828,30 @@ margin-bottom: 85px;
 
 .dot {
     position: absolute;
+    display: block; 
     width: 8px;
     height: 8px;
     background-color: #fff;
     border: 2px solid #fff; 
     border-radius: 50%; 
     bottom: 36px;
-    left: 295px;  
+    left: 295px; 
+    z-index: 20; 
+    cursor: pointer;
 }
 
-.dot:nth-of-type(2){
-    left: 317px; 
+.dot-2{
+    position: absolute;
+    display: block; 
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border: 2px solid #fff; 
+    border-radius: 50%; 
+    bottom: 36px;
+    left: 317px;  
+    z-index: 20; 
+    cursor: pointer;    
 }
 
 .dot-active {
@@ -1330,7 +1356,7 @@ margin-bottom: 85px;
     font-weight: bold;    
     display: none;
     width: 620px;
-    height: 430px;       
+    min-height: 430px;       
     border-top: 7px solid #ee3643;
     z-index: 1000;
 }
@@ -1374,22 +1400,24 @@ margin-bottom: 85px;
 
 .modal-feedback input {
     width: 220px;
-    height: 38px;
+    /* height: 38px; */
+    font-size: 13px;
+    line-height: 1;
     margin-bottom: 22px;
-    padding: 15px;
+    padding: 9px 15px 8px 15px;
     border: solid 2px #dee3e4;
     background-color: #ffffff;
     font-family: "PT Sans", sans-serif;
 }
 
 .modal-feedback textarea {
-    padding-top: 13px;
-    padding-left: 16px;
+    padding: 13px 16px;    
     width: 460px;
     height: 114px ;
     border: solid 2px #dee3e4;
     background-color: #ffffff;
     font-family: "PT Sans", sans-serif;
+    resize: vertical;
 }
 
 .modal-feedback-form span {

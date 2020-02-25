@@ -7,7 +7,7 @@ let map = document.querySelector(".modal-map");
 let closeButtons = document.querySelectorAll(".button-close");
 
 let userName = popup.querySelector("[name=name]");
-let form = popup.querySelector("form");
+let form = popup.querySelector(".modal-feedback-form");
 let email = popup.querySelector("[name=email]");
 
 let isStorageSupport = true;
@@ -55,14 +55,36 @@ mapLink.addEventListener("click", function(evt){
     map.classList.add("modal-show");
 });
 
-closeButtons.forEach(element => {
-    element.addEventListener('click', function(){
-        popup.classList.remove("modal-show");
-        map.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-        basketPopup.classList.remove("modal-show"); 
+
+
+for (var i=0; i<closeButtons.length; i++){
+  closeButtons[i].addEventListener('click', function(){
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-show");
+    map.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
+    basketPopup.classList.remove("modal-show");
     });
-});
+}
+
+// closeButtons.forEach(function (element) {
+//   element.addEventListener('click', function(){
+//   popup.classList.remove("modal-show");
+//   popup.classList.remove("modal-show");
+//   map.classList.remove("modal-show");
+//   popup.classList.remove("modal-error");
+//   basketPopup.classList.remove("modal-show");
+//   });
+// });
+
+// closeButtons.forEach(element => {
+//     element.addEventListener('click', function(){
+//         popup.classList.remove("modal-show");
+//         map.classList.remove("modal-show");
+//         popup.classList.remove("modal-error");
+//         basketPopup.classList.remove("modal-show"); 
+//     });
+// });
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -80,13 +102,27 @@ window.addEventListener("keydown", function (evt) {
     }
   });
 
+  for (var i=0; i<buyButton.length; i++){
+    buyButton[i].addEventListener('click', function(evt){
+      evt.preventDefault(); 
+      basketPopup.classList.add("modal-show");      
+      });
+  }
+
+//   buyButton.forEach(function(element) {
+//     element.addEventListener('click', function(evt){
+//         evt.preventDefault();       
+//         basketPopup.classList.add("modal-show");      
+//     });
+// });
+
  
-buyButton.forEach(element => {
-    element.addEventListener('click', function(evt){
-        evt.preventDefault();       
-        basketPopup.classList.add("modal-show");      
-    });
-});
+// buyButton.forEach(element => {
+//     element.addEventListener('click', function(evt){
+//         evt.preventDefault();       
+//         basketPopup.classList.add("modal-show");      
+//     });
+// });
 
 close2.addEventListener('click', function(){
   basketPopup.classList.remove("modal-show");      
