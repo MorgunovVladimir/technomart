@@ -4,7 +4,7 @@ let mapLink = document.querySelector(".map-link");
 
 let popup = document.querySelector(".modal-feedback");
 let map = document.querySelector(".modal-map");
-let closeButtons = document.querySelectorAll(".button-close");
+let closeButtons = [].slice.call(document.querySelectorAll(".button-close"));
 
 let userName = popup.querySelector("[name=name]");
 let form = popup.querySelector(".modal-feedback-form");
@@ -13,7 +13,7 @@ let email = popup.querySelector("[name=email]");
 let isStorageSupport = true;
 let storage = "";
 
-let buyButton = document.querySelectorAll(".buy");
+let buyButton = [].slice.call(document.querySelectorAll(".buy"));
 let basketPopup = document.querySelector(".modal-basket");
 let close2 = document.querySelector(".continue")
 
@@ -25,9 +25,8 @@ try {
 
 
 feedBack.addEventListener("click", function(evt){
-    evt.preventDefault();   
+    evt.preventDefault();
     popup.classList.add("modal-show");
-
     if (storage) {
       userName.value = storage;
       email.focus();
@@ -56,39 +55,19 @@ mapLink.addEventListener("click", function(evt){
 });
 
 
+closeButtons.forEach(function (element) {
+  element.addEventListener('click', function(){
+  popup.classList.remove("modal-show");
+  popup.classList.remove("modal-show");
+  map.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
+  basketPopup.classList.remove("modal-show");
+  });
+});
 
-for (var i=0; i<closeButtons.length; i++){
-  closeButtons[i].addEventListener('click', function(){
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-show");
-    map.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-    basketPopup.classList.remove("modal-show");
-    });
-}
-
-// closeButtons.forEach(function (element) {
-//   element.addEventListener('click', function(){
-//   popup.classList.remove("modal-show");
-//   popup.classList.remove("modal-show");
-//   map.classList.remove("modal-show");
-//   popup.classList.remove("modal-error");
-//   basketPopup.classList.remove("modal-show");
-//   });
-// });
-
-// closeButtons.forEach(element => {
-//     element.addEventListener('click', function(){
-//         popup.classList.remove("modal-show");
-//         map.classList.remove("modal-show");
-//         popup.classList.remove("modal-error");
-//         basketPopup.classList.remove("modal-show"); 
-//     });
-// });
 
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
+    if (evt.keyCode === 27) {    
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");        
@@ -102,28 +81,15 @@ window.addEventListener("keydown", function (evt) {
     }
   });
 
-  for (var i=0; i<buyButton.length; i++){
-    buyButton[i].addEventListener('click', function(evt){
-      evt.preventDefault(); 
-      basketPopup.classList.add("modal-show");      
-      });
-  }
-
-//   buyButton.forEach(function(element) {
-//     element.addEventListener('click', function(evt){
-//         evt.preventDefault();       
-//         basketPopup.classList.add("modal-show");      
-//     });
-// });
+  
+  buyButton.forEach(function(element) {
+    element.addEventListener('click', function(evt){
+        evt.preventDefault();       
+        basketPopup.classList.add("modal-show");      
+    });
+});
 
  
-// buyButton.forEach(element => {
-//     element.addEventListener('click', function(evt){
-//         evt.preventDefault();       
-//         basketPopup.classList.add("modal-show");      
-//     });
-// });
-
 close2.addEventListener('click', function(){
   basketPopup.classList.remove("modal-show");      
 });   
