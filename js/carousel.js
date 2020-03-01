@@ -1,10 +1,10 @@
-let carousel = document.querySelector(".offers__category-carousel");
-let left = document.querySelector(".arrowleft");
-let right = document.querySelector(".arrowright");
-let heading = document.querySelector(".offers__category-carousel-heading");
-let description = document.querySelector(".offers__category-carousel-description");
-let dot1 = document.querySelector(".dot-1");
-let dot2 = document.querySelector(".dot-2");
+var carousel = document.querySelector(".offers__category-carousel");
+var left = document.querySelector(".arrowleft");
+var right = document.querySelector(".arrowright");
+var heading = document.querySelector(".offers__category-carousel-heading");
+var description = document.querySelector(".offers__category-carousel-description");
+var dot1 = document.querySelector(".dot-1");
+var dot2 = document.querySelector(".dot-2");
 
 left.addEventListener('click', function(){
     carousel.classList.remove('end');

@@ -1,21 +1,21 @@
-let feedBack = document.querySelector(".feedback-button");
-let mapLink = document.querySelector(".map-link");
+var feedBack = document.querySelector(".feedback-button");
+var mapLink = document.querySelector(".map-link");
 
 
-let popup = document.querySelector(".modal-feedback");
-let map = document.querySelector(".modal-map");
-let closeButtons = [].slice.call(document.querySelectorAll(".button-close"));
+var popup = document.querySelector(".modal-feedback");
+var map = document.querySelector(".modal-map");
+var closeButtons = [].slice.call(document.querySelectorAll(".button-close"));
 
-let userName = popup.querySelector("[name=name]");
-let form = popup.querySelector(".modal-feedback-form");
-let email = popup.querySelector("[name=email]");
+var userName = popup.querySelector("[name=name]");
+var form = popup.querySelector(".modal-feedback-form");
+var email = popup.querySelector("[name=email]");
 
-let isStorageSupport = true;
-let storage = "";
+var isStorageSupport = true;
+var storage = "";
 
-let buyButton = [].slice.call(document.querySelectorAll(".buy"));
-let basketPopup = document.querySelector(".modal-basket");
-let close2 = document.querySelector(".continue")
+var buyButton = [].slice.call(document.querySelectorAll(".buy"));
+var basketPopup = document.querySelector(".modal-basket");
+var close2 = document.querySelector(".continue")
 
 try {
   storage = localStorage.getItem("name");

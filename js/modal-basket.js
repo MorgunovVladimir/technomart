@@ -1,7 +1,7 @@
-let buyButton = [].slice.call(document.querySelectorAll(".buy"));
-let basketPopup = document.querySelector(".modal-basket");
-let close = document.querySelector(".button-close");
-let close2 = document.querySelector(".continue")
+var buyButton = [].slice.call(document.querySelectorAll(".buy"));
+var basketPopup = document.querySelector(".modal-basket");
+var close = document.querySelector(".button-close");
+var close2 = document.querySelector(".continue")
 
 buyButton.forEach(function(element) {
     element.addEventListener('click', function(evt){

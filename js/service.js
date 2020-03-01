@@ -1,9 +1,9 @@
-let deliveryButton = document.querySelector(".delivery-button");
-let garantyButton = document.querySelector(".garanty-button");
-let creditButton = document.querySelector(".credit-button");
-let delivery = document.querySelector(".delivery");
-let garanty = document.querySelector(".garanty");
-let credit = document.querySelector(".credit");
+var deliveryButton = document.querySelector(".delivery-button");
+var garantyButton = document.querySelector(".garanty-button");
+var creditButton = document.querySelector(".credit-button");
+var delivery = document.querySelector(".delivery");
+var garanty = document.querySelector(".garanty");
+var credit = document.querySelector(".credit");
 
 
 deliveryButton.addEventListener('click', function () {        
