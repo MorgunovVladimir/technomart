@@ -1414,9 +1414,6 @@ margin-bottom: 60px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal p {
-    margin: 0 0 15px;  
-}
 
 .modal-feedback {      
     top: 10vh;
@@ -1463,6 +1460,12 @@ margin-bottom: 60px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 74px 80px 37px;     
+ }
+
+ .modal-feedback label { 
+     display: block; 
+     cursor: pointer;
+     margin: 0 0 15px;
  }
 
 .modal-feedback input {  

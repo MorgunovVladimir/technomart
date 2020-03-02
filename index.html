@@ -322,12 +322,12 @@
             сторительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить Ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
+          </p>
           <ul class="about__list-info">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
-          </ul>
-        </p>
+          </ul>        
         
           <a href="" class="button">Подробнее о компании</a>
         </section>
@@ -409,18 +409,18 @@
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form action="#" method="post" class="modal-feedback-form">
       <div class="modal-body">
-        <label>
-          <p>Ваше имя:</p>
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label>
-          <p>Ваш e-mail: </p>
-          <input type="email" name="email" placeholder="email@example.com">
-        </label>
-        <label>
-          <p>Текст письма</p>
-          <textarea name="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </label>
+        <div>
+          <label for="modal-feedback-name">Ваше имя:</label>      
+          <input type="text" name="name" placeholder="Имя Фамилия" id="modal-feedback-name">        
+        </div>
+        <div>
+          <label for="modal-feedback-email">Ваш e-mail: </label>         
+          <input type="email" name="email" placeholder="email@example.com" id="modal-feedback-email">       
+        </div>
+        <div>
+          <label for="modal-feedback-reply">Текст письма</label>
+          <textarea name="message" cols="30" rows="10" placeholder="В свободной форме" id="modal-feedback-reply"></textarea>     
+        </div>    
       </div>
       <div class="buttonback">
         <button type="submit" class="button">Отправить</button>
