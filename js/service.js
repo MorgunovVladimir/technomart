@@ -1,37 +1,37 @@
 var deliveryButton = document.querySelector('.delivery-button');
-var garantyButton = document.querySelector('.garanty-button');
+var guaranteeButton = document.querySelector('.guarantee-button');
 var creditButton = document.querySelector('.credit-button');
 var delivery = document.querySelector('.delivery');
-var garanty = document.querySelector('.garanty');
+var guarantee = document.querySelector('.guarantee');
 var credit = document.querySelector('.credit');
 
 
 deliveryButton.addEventListener('click', function () {
     deliveryButton.classList.add('service__active');
-    garantyButton.classList.remove('service__active');
+    guaranteeButton.classList.remove('service__active');
     creditButton.classList.remove('service__active');
     delivery.style.display = 'block';
-    garanty.style.display = 'none';
+    guarantee.style.display = 'none';
     credit.style.display = 'none';
 });
 
 
-garantyButton.addEventListener('click', function () {
+guaranteeButton.addEventListener('click', function () {
     deliveryButton.classList.remove('service__active');
-    garantyButton.classList.add('service__active');
+    guaranteeButton.classList.add('service__active');
     creditButton.classList.remove('service__active');
     delivery.style.display = 'none';
-    garanty.style.display = 'block';
+    guarantee.style.display = 'block';
     credit.style.display = 'none';
 });
 
 
 creditButton.addEventListener('click', function () {
     deliveryButton.classList.remove('service__active');
-    garantyButton.classList.remove('service__active');
+    guaranteeButton.classList.remove('service__active');
     creditButton.classList.add('service__active');;
     delivery.style.display = 'none';
-    garanty.style.display = 'none';
+    guarantee.style.display = 'none';
     credit.style.display = 'block';
 });
 

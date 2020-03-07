@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet"
     type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/minimizedStyle.css">
 </head>
 
 <body>
@@ -25,9 +25,9 @@
               width="109" height="19"></a>
         </div>
         <div class="search">
-          <form action="#" method="get">
+          <form action="catalog.html" method="get">
             <label class="search-label">
-              <input type="text" name="search" placeholder="Поиск:">
+              <input type="text" name="search" aria-label="поиск по сайту" placeholder="Поиск:">
               <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px"
                 viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
@@ -76,12 +76,12 @@
         </div>
         <div>
           <div class="main-header__down-phone-number">
-            <a href="tel:+78125550555" class="number">+7 (812) 555-05-55</a>
+            <a href="tel:+78125550555" class="number" aria-label="контактный телефон">+7 (812) 555-05-55</a>
           </div>
-          <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="user-menu">
-          <div class="loged">
+          <div class="logged">
             <a href="profile.html" class="profile">
               <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="18px"
@@ -93,7 +93,7 @@
               </svg>
               <span>Равшан Джамшутович</span>
             </a>
-            <a href="logout.html" class="logout">
+            <a href="logout.html" class="logout" aria-label="кнопка выйти">
               <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="17px"
                 viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
@@ -106,7 +106,7 @@
             </a>
           </div>
           <div class="information">
-            <a href="" class="myorders">Мои заказы</a>
+            <a href="" class="my-orders">Мои заказы</a>
             <span class="point"></span>
             <a href="" class="cabinet">Личный кабинет</a>
           </div>
@@ -127,12 +127,12 @@
   </header>
   <main class="main-content">
     <div class="wrapper">
-      <ul class="breadcrumbles">
-        <li><a href="index.html" class="breadcrumbles-home"><img src="img/icon-home.svg" alt="Кнопка домой" width="14"
+      <ul class="breadcrumbs">
+        <li><a href="index.html" class="breadcrumbs-home"><img src="img/icon-home.svg" alt="Кнопка домой" width="14"
               height="12"></a></li>
         <li><a href="">Каталог</a></li>
         <li><a href="">Инструмент</a></li>
-        <li class="breadcrumbles-current">Перфораторы</li>
+        <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
       <div class="drill-header">
         <h1 class="page-title">Перфораторы</h1>
@@ -140,7 +140,7 @@
       <div class="catalog-columns">
         <section>
           <h2 class=visually-hidden>Фильтр товаров</h2>
-          <form class="filters" action="#" method="get">
+          <form class="filters" action="catalog.html" method="get">
             <div class="filters__filter">
               <p>Фильтр:</p>
             </div>
@@ -158,9 +158,9 @@
               </div>
 
               <div class="price-controls">
-                <label class="min-price"><input name="min-price" type="number" value="0" min="0" max="30000"></label>
+                <label class="min-price"><input name="min-price" type="number" value="0" min="0" max="30000" aria-label="введите минимальную цену"></label>
                 <span>—</span>
-                <label class="max-price"><input name="max-price" type="number" value="30000" max="30000"></label>
+                <label class="max-price"><input name="max-price" type="number" value="30000" max="30000" aria-label="введите масимальную цену"></label>
               </div>
             </div>
             <hr class="line">
@@ -212,31 +212,30 @@
             <ul class="sorting__list">
               <li><a href="#" class="by-list by-list-active">По цене</a></li>
               <li><a href="" class="by-list">По типу</a></li>
-              <li><a href="" class="by-list">По функционалу</a></li>
-              <li>
-                <a href="" class="sort-list sort-list-active">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"
-                    xml:space="preserve">
-                    <polygon points="5.5,0 0,10 11,10 " />
-                  </svg>
-                </a>
-                <a href="" class="sort-list">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"
-                    xml:space="preserve">
-                    <polyline points="5.5,10 0,0 11,0 " />
-                  </svg>
-                </a>
-              </li>
-            </ul>
+              <li><a href="" class="by-list">По функционалу</a></li>   
+                        
+              </ul>
+              <a href="" class="sort-list sort-list-active" aria-label="сортировать с начала алфавита / начиная с максимальных цен">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"
+                  xml:space="preserve">
+                  <polygon points="5.5,0 0,10 11,10 " />
+                </svg>
+              </a>
+              <a href="" class="sort-list" aria-label="сортировать с конца алфавита / начиная с минимальных цен">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"
+                  xml:space="preserve">
+                  <polyline points="5.5,10 0,0 11,0 " />
+                </svg>
+              </a>      
           </div>
           <section class="items">
             <ul class="items__list">
               <li class="items__list-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
@@ -246,44 +245,44 @@
                 <span class="linethrough">
                   22500 Р.
                 </span>
-                <a href="#" class="item-button">
+                <a href="buy.html" class="item-button">
                   15500 Р.
                 </a>
               </li>
               <li class="items__list-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
                   BFG 6000
                 </h3>
-                <img src="img/Perforator_3.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <img src="img/Perforator_3.jpg" alt="Изображение Перфоратора BFG 6000" width="218" height="170">
                 <span class="linethrough">
                   30500 Р.
                 </span>
-                <a href="#" class="item-button">25500 Р.</a>
+                <a href="buy.html" class="item-button">25500 Р.</a>
               </li>
               <li class="items__list-item new-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
                   BFG 2000
                 </h3>
-                <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 2000" width="218" height="170">
                 <span class="hidden">
                   &nbsp;
                 </span>
-                <a href="#" class="item-button">12500 Р.</a>
+                <a href="buy.html" class="item-button">12500 Р.</a>
               </li>
               <li class="items__list-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
@@ -293,44 +292,44 @@
                 <span class="linethrough">
                   22500 Р.
                 </span>
-                <a href="#" class="item-button">
+                <a href="buy.html" class="item-button">
                   15500 Р.
                 </a>
               </li>
               <li class="items__list-item new-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
                   BFG 6000
                 </h3>
-                <img src="img/Perforator_3.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <img src="img/Perforator_3.jpg" alt="Изображение Перфоратора BFG 6000" width="218" height="170">
                 <span class="linethrough">
                   30500 Р.
                 </span>
-                <a href="#" class="item-button">25500 Р.</a>
+                <a href="buy.html" class="item-button">25500 Р.</a>
               </li>
               <li class="items__list-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
                   BFG 2000
                 </h3>
-                <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 2000" width="218" height="170">
                 <span class="hidden">
                   &nbsp;
                 </span>
-                <a href="#" class="item-button">12500 Р.</a>
+                <a href="buy.html" class="item-button">12500 Р.</a>
               </li>
               <li class="items__list-item new-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
@@ -340,40 +339,41 @@
                 <span class="linethrough">
                   22500 Р.
                 </span>
-                <a href="#" class="item-button">
+                <a href="buy.html" class="item-button">
                   15500 Р.
                 </a>
               </li>
               <li class="items__list-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
                   BFG 6000
                 </h3>
-                <img src="img/Perforator_3.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <img src="img/Perforator_3.jpg" alt="Изображение Перфоратора BFG 6000" width="218" height="170">
                 <span class="linethrough">
                   30500 Р.
                 </span>
-                <a href="#" class="item-button">25500 Р.</a>
+                <a href="buy.html" class="item-button">25500 Р.</a>
               </li>
               <li class="items__list-item">
                 <div class="items__list-item-actions">
-                  <a href="#" class="buy">Купить</a>
-                  <a href="#" class="bookmark">В закладки</a>
+                  <a href="buy.html" class="buy">Купить</a>
+                  <a href="bookmark.html" class="bookmark">В закладки</a>
                 </div>
                 <h3>
                   Перфоратор BOSCH
                   BFG 2000
                 </h3>
-                <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 3000" width="218" height="170">
+                <img src="img/Perforator_2.jpg" alt="Изображение Перфоратора BFG 2000" width="218" height="170">
                 <span class="hidden">
                   &nbsp;
                 </span>
-                <a href="#" class="item-button">12500 Р.</a>
+                <a href="buy.html" class="item-button">12500 Р.</a>
               </li>
+              
             </ul>
           </section>
           <div>
@@ -440,9 +440,9 @@
         </div>
         <div class="social">
           <ul class="social__list">
-            <li><a href=""><img src="img/vk-icon.svg" alt="vk" width="26" height="15"></a></li>
-            <li><a href=""><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"></a></li>
-            <li><a href=""><img src="img/insta-icon.svg" alt="instagramm" width="21" height="21"></a></li>
+            <li><a href=""><img src="img/vk-icon.svg" alt="vk" width="26" height="15" aria-label="ссылка на аккаунт Вконтакте"></a></li>
+            <li><a href=""><img src="img/fb-icon.svg" alt="facebook" width="12" height="22" aria-label="ссылка на аккаунт Фейсбука"></a></li>
+            <li><a href=""><img src="img/insta-icon.svg" alt="instagramm" width="21" height="21" aria-label="ссылка на аккаунт Инстаграмм"></a></li>
           </ul>
         </div>
         <div class="developed">
@@ -465,13 +465,13 @@
     <div>
       <h3>Товар добавлен в корзину!</h3>
     </div>
-    <div class="buttonback">
+    <div class="button-back">
       <a href="" class="button">ОФОРМИТЬ ЗАКАЗ</a>
       <button type="button" class="button continue">ПРОДОЛЖИТЬ ПОКУПКИ</button>
     </div>
-    <button type="button" class="button-close"></button>
+    <button type="button" class="button-close" aria-label="кнопка закрыть"></button>
   </section>
-  <script src="js/minimazedModalBasket.js"></script>
+  <script src="js/minimizedModalBasket.js"></script>
 </body>
 
 </html>

@@ -340,12 +340,10 @@ a {
 }
 
 
-
 .bookmarks:active,
 .basket:active {
     background-color: #161d29;
 }
-
 
 .main-header__up-logo {
     width: 220px;
@@ -421,7 +419,7 @@ a {
     background: url(../img/icon-phone.svg) no-repeat;
 }
 
-.adress {
+.address {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
@@ -712,7 +710,6 @@ a {
     position: relative;
 }
 
-
 .service-buttons::after {
     position: absolute;
     content: "";
@@ -751,7 +748,7 @@ a {
     margin-top: 16px;
 }
 
-.garanty {
+.guarantee {
     display: none;
     background-image: url("../img/guarantee.png");
     background-repeat: no-repeat;
@@ -760,7 +757,7 @@ a {
     min-height: 283px;
 }
 
-.garanty p {
+.guarantee p {
     max-width: 377px;
     margin-top: 16px;
 }
@@ -799,8 +796,7 @@ a {
     letter-spacing: normal;
     text-align: left;
     box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
-    cursor: pointer;
-    outline: none;
+    cursor: pointer;  
 }
 
 .service__active {
@@ -926,7 +922,7 @@ a {
     background-color: #ee3643;
 }
 
-.offers__category-carousel .arrowleft {
+.offers__category-carousel .arrow-left {
     position: absolute;
     display: block;
     background-image: url(../img/icon-left.png);
@@ -938,7 +934,7 @@ a {
     cursor: pointer;
 }
 
-.offers__category-carousel .arrowright {
+.offers__category-carousel .arrow-right {
     position: absolute;
     display: block;
     background-image: url(../img/icon-right.png);
@@ -948,6 +944,14 @@ a {
     left: 577px;
     z-index: 20;
     cursor: pointer;
+}
+
+.offers__category-carousel .arrow-left:focus,
+.offers__category-carousel .arrow-right:focus,
+.offers__category-carousel .dot-1:focus,
+.offers__category-carousel .dot-2:focus 
+{
+ outline: 2px solid lightblue;
 }
 
 .offers__category-carousel h2 {
@@ -1067,8 +1071,7 @@ a {
 .items__list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap;   
     margin: 0;
     padding: 0;
 }
@@ -1080,9 +1083,12 @@ a {
     align-items: center;
     border: 1px solid #e5e5e5;
     width: 220px;
-    min-height: 318px;
-    margin-bottom: 21px;
+    min-height: 318px;   
+    margin-bottom: 20px;
+}
 
+.items__list-item:not(:nth-of-type(3n)){
+    margin: 0 20px 21px 0;  
 }
 
 .items__list-item img {
@@ -1219,9 +1225,9 @@ a {
     position: relative;
     width: 141px;
     height: 38px;
-    margin: 8px 36px 21px 41px;
+    margin: 8px 40px 21px 41px;
     margin-bottom: 21px;
-    padding: 10px 30px;
+    padding: 10px 30px 9px;
     color: white;
     background: #ee3643;
     border-radius: 3px;
@@ -1329,10 +1335,14 @@ a {
     opacity: 0.5;
 }
 
-.container-bottom>p {
+.container-bottom > p {
     margin: 27px 0 18px 5px;
     max-width: 325px;
     min-height: 40px;
+}
+
+.container-bottom > p span{
+    display: block;
 }
 
 .container-bottom .footer-nav {
@@ -1609,7 +1619,7 @@ a {
     animation: shake 0.6s;
 }
 
-.buttonback {
+.button-back {
     background-color: #f4f4f4;
     width: 100%;
     padding: 37px 80px;
@@ -1626,7 +1636,7 @@ a {
     color: #32425c;
 }
 
-.loged {
+.logged {
     position: relative;
     background-color: #fff;
     width: 299px;
@@ -1638,14 +1648,14 @@ a {
     padding: 12px 65px 12px 47px;
 }
 
-.loged a {
+.logged a {
     font-size: 21px;
     line-height: 1;
     color: #000000;
     text-decoration: none;
 }
 
-.loged .icon {
+.logged .icon {
     fill: #c5c5c5;
 }
 
@@ -1673,17 +1683,21 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.logout:focus .icon {   
+    outline: 2px solid lightblue;
+}
+
 .information {
     margin-top: 6px;
     padding-left: 69px;
 }
 
-.myorders:hover,
+.my-orders:hover,
 .cabinet:hover {
     color: #ee3643;
 }
 
-.myorders:active,
+.my-orders:active,
 .cabinet:active {
     color: rgba(50, 66, 92, 0.3);
 }
@@ -1703,7 +1717,7 @@ a {
     padding-left: 9px;
 }
 
-.breadcrumbles {
+.breadcrumbs {
     list-style: none;
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
@@ -1714,19 +1728,19 @@ a {
     display: flex;
 }
 
-.breadcrumbles-home {
+.breadcrumbs-home {
     width: 14px;
     height: 12px;
     background-image: url(../img/icon-home.svg);
     background-repeat: no-repeat;
 }
 
-.breadcrumbles li {
+.breadcrumbs li {
     position: relative;
     margin-right: 40px;
 }
 
-.breadcrumbles li:not(:last-of-type)::after {
+.breadcrumbs li:not(:last-of-type)::after {
     position: absolute;
     content: "";
     width: 8px;
@@ -1735,15 +1749,15 @@ a {
     background-image: url(../img/icon-right-small.png);
 }
 
-.breadcrumbles li:first-child::after {
+.breadcrumbs li:first-child::after {
     left: 29px;
 }
 
-.breadcrumbles li:nth-child(2)::after {
+.breadcrumbs li:nth-child(2)::after {
     left: 68px;
 }
 
-.breadcrumbles li:nth-child(3)::after {
+.breadcrumbs li:nth-child(3)::after {
     left: 96px;
 }
 
@@ -1960,10 +1974,19 @@ a {
     border-color: #b5b5b5;
 }
 
+
+.filters__brand input[type="checkbox"]:focus~label::before,
+.filters__supply input[type="radio"]:focus~label::before {
+    outline: 2px solid lightblue;
+}
+
+
 .filters__brand input[type="checkbox"]:checked:disabled~label::before,
 .filters__supply input[type="radio"]:checked:disabled~label::before {
     opacity: 0.3;
 }
+
+
 
 .filters__supply input[type="radio"] {
     position: absolute;
@@ -1997,40 +2020,48 @@ a {
 }
 
 .sorting {
+    position: relative;
     font-family: 'PT Sans', 'Arial', sans-serif;
     min-height: 38px;
     font-size: 13px;
     text-transform: uppercase;
     background-color: #f7f3ec;
     display: flex;
-
-    justify-content: space-between;
-    padding: 10px 19px;
+    padding: 10px 106px 10px 19px;
     margin-bottom: 21px;
     line-height: 1.38;
-
 }
 
-.sorting__list {
+.sorting__list {   
     margin: 0;
+    margin-left: 139px;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 434px;
+    width: 434px; 
+}
+
+.sort-list {
+    position: absolute;
+    top: 11px;
+}
+
+.sort-list:first-of-type{
+    right: 49px;
+}
+
+.sort-list:last-of-type{
+    right: 17px;
 }
 
 .sort-list:not(.sort-list-active) {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .sort-list:hover {
     opacity: 1;
-}
-
-.sort-list:first-of-type {
-    margin-right: 15px;
 }
 
 .sort-list-active {
@@ -2069,7 +2100,7 @@ a {
     list-style: none;
     display: flex;
     margin: 0;
-    margin-top: 31px;
+    margin: 31px 0 60px;
     padding: 0;
 }
 
