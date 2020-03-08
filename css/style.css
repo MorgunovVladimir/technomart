@@ -796,7 +796,7 @@ a {
     letter-spacing: normal;
     text-align: left;
     box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 .service__active {
@@ -895,8 +895,8 @@ a {
     display: block;
     width: 8px;
     height: 8px;
-    background-color: #fff;
-    border: 2px solid #fff;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     bottom: 36px;
     left: 295px;
@@ -904,13 +904,13 @@ a {
     cursor: pointer;
 }
 
-.dot-2 {
+.dot-2 {    
     position: absolute;
     display: block;
     width: 8px;
     height: 8px;
-    background-color: #fff;
-    border: 2px solid #fff;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     bottom: 36px;
     left: 317px;
@@ -923,6 +923,8 @@ a {
 }
 
 .offers__category-carousel .arrow-left {
+    background-color: transparent;
+    border: none;
     position: absolute;
     display: block;
     background-image: url(../img/icon-left.png);
@@ -935,6 +937,8 @@ a {
 }
 
 .offers__category-carousel .arrow-right {
+    background-color: transparent;
+    border: none;
     position: absolute;
     display: block;
     background-image: url(../img/icon-right.png);
@@ -949,9 +953,8 @@ a {
 .offers__category-carousel .arrow-left:focus,
 .offers__category-carousel .arrow-right:focus,
 .offers__category-carousel .dot-1:focus,
-.offers__category-carousel .dot-2:focus 
-{
- outline: 2px solid lightblue;
+.offers__category-carousel .dot-2:focus {
+    outline: 2px solid lightblue;
 }
 
 .offers__category-carousel h2 {
@@ -1071,7 +1074,7 @@ a {
 .items__list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -1083,12 +1086,16 @@ a {
     align-items: center;
     border: 1px solid #e5e5e5;
     width: 220px;
-    min-height: 318px;   
-    margin-bottom: 20px;
+    min-height: 318px;
+    margin: 0 20px 20px 0;
 }
 
-.items__list-item:not(:nth-of-type(3n)){
-    margin: 0 20px 21px 0;  
+.items__list.four-in-row .items__list-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.items__list.three-in-row .items__list-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .items__list-item img {
@@ -1225,13 +1232,14 @@ a {
     position: relative;
     width: 141px;
     height: 38px;
-    margin: 8px 40px 21px 41px;
-    margin-bottom: 21px;
-    padding: 10px 30px 9px;
+    margin: 8px 40px 21px 45px;
+    padding: 10px 20px 9px;
     color: white;
     background: #ee3643;
     border-radius: 3px;
+    white-space: nowrap;
     text-align: center;
+
 }
 
 .item-button:after {
@@ -1305,7 +1313,7 @@ a {
     font-size: 16px;
     background-color: #293449;
     min-height: 107px;
-    padding-top: 39px;
+    padding-top: 36px;
 }
 
 .footer-nav {
@@ -1335,13 +1343,13 @@ a {
     opacity: 0.5;
 }
 
-.container-bottom > p {
+.container-bottom>p {
     margin: 27px 0 18px 5px;
     max-width: 325px;
     min-height: 40px;
 }
 
-.container-bottom > p span{
+.container-bottom>p span {
     display: block;
 }
 
@@ -1356,16 +1364,16 @@ a {
 
 .footer-down .container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
 }
 
 .copyright {
     max-width: 228px;
+    margin-right: 162px;
 }
 
 .social {
-    margin-left: 36px;
+    margin-right: 117px;
 }
 
 .social__list {
@@ -1404,7 +1412,6 @@ a {
 .developed p {
     margin: 0;
 }
-
 
 .wheat {
     line-height: 1.333;
@@ -1643,7 +1650,6 @@ a {
     min-height: 45px;
     display: inline-block;
     vertical-align: middle;
-
     margin-left: 51px;
     padding: 12px 65px 12px 47px;
 }
@@ -1683,7 +1689,7 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.logout:focus .icon {   
+.logout:focus .icon {
     outline: 2px solid lightblue;
 }
 
@@ -2032,7 +2038,7 @@ a {
     line-height: 1.38;
 }
 
-.sorting__list {   
+.sorting__list {
     margin: 0;
     margin-left: 139px;
     padding: 0;
@@ -2040,7 +2046,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 434px; 
+    width: 434px;
 }
 
 .sort-list {
@@ -2048,11 +2054,11 @@ a {
     top: 11px;
 }
 
-.sort-list:first-of-type{
+.sort-list:first-of-type {
     right: 49px;
 }
 
-.sort-list:last-of-type{
+.sort-list:last-of-type {
     right: 17px;
 }
 

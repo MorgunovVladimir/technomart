@@ -123,10 +123,10 @@
           <article class="offers__category-carousel start">
             <h2 class="offers__category-carousel-heading">Дрели</h2>
             <p class="offers__category-carousel-description">Соседям на радость!</p>
-            <span class="arrow-left" tabindex="0"></span>
-            <span class="arrow-right" tabindex="0"></span>
-            <span class="dot-1 dot-active" tabindex="0"></span>
-            <span class="dot-2" tabindex="0"></span>
+            <button class="arrow-left" aria-label="прокрутить слайдер влево"></button>
+            <button class="arrow-right" aria-label="прокрутить слайдер вправо"></button>
+            <span class="dot-1 dot-active"></span>
+            <span class="dot-2"></span>
             <a href="catalog.html" class="button">Открыть Каталог</a>
           </article>
         </div>
@@ -151,8 +151,8 @@
           <h2>Популярные товары:</h2><a href="" class="button">Все популярные товары</a>
         </div>
         <div class="items">
-          <div class="items__list">
-            <article class="items__list-item">  
+          <div class="items__list four-in-row">
+            <article class="items__list-item">
               <div class="items__list-item-actions">
                 <a href="buy.html" class="buy">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -254,6 +254,7 @@
               </span>
               <a href="buy.html" class="item-button">12500 Р.</a>
             </article>
+
           </div>
         </div>
       </section>
@@ -327,8 +328,8 @@
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
-          </ul>        
-        
+          </ul>
+
           <a href="" class="button">Подробнее о компании</a>
         </section>
         <section class="contacts">
@@ -355,7 +356,7 @@
           <div>
             <a class="footer-up__logo"><img src="img/technomart.svg" alt="надпись ТЕХНОМАРТ" width="138"
                 height="23"></a>
-              </div>
+          </div>
           <ul class="footer-nav">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -367,10 +368,10 @@
 
         <div class="container-bottom">
           <p>
-           <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </span>
-           <span>+7 (812) 555-05-55</span> 
-          </p>        
-         
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </span>
+            <span>+7 (812) 555-05-55</span>
+          </p>
+
           <ul class="footer-nav">
             <li><a href="#" class="wheat">Материалы</a></li>
             <li><a href="#" class="wheat">Техника</a></li>
@@ -390,19 +391,22 @@
         </div>
         <div class="social">
           <ul class="social__list">
-            <li><a href=""><img src="img/vk-icon.svg" alt="vk" width="26" height="15" aria-label="ссылка на аккаунт Вконтакте"></a></li>
-            <li><a href=""><img src="img/fb-icon.svg" alt="facebook" width="12" height="22" aria-label="ссылка на аккаунт Фейсбука"></a></li>
-            <li><a href=""><img src="img/insta-icon.svg" alt="instagramm" width="21" height="21" aria-label="ссылка на аккаунт Инстаграмм"></a></li>
+            <li><a href=""><img src="img/vk-icon.svg" alt="vk" width="26" height="15"
+                  aria-label="ссылка на аккаунт Вконтакте"></a></li>
+            <li><a href=""><img src="img/fb-icon.svg" alt="facebook" width="12" height="22"
+                  aria-label="ссылка на аккаунт Фейсбука"></a></li>
+            <li><a href=""><img src="img/insta-icon.svg" alt="instagramm" width="21" height="21"
+                  aria-label="ссылка на аккаунт Инстаграмм"></a></li>
           </ul>
         </div>
         <div class="developed">
           <div>
             <p>Обратная связь:</p>
-            <p><a href="" class="wheat">mail@htmlacademy.ru</a></p>           
+            <p><a href="" class="wheat">mail@htmlacademy.ru</a></p>
           </div>
           <div>
-            <p>Разработано -</p>
-            <p><a href="https://htmlacademy.ru/intensive/htmlcss" class="wheat">htmlacademy.ru</a></p>            
+            <p>Разработано —</p>
+            <p><a href="https://htmlacademy.ru/intensive/htmlcss" class="wheat">htmlacademy.ru</a></p>
           </div>
         </div>
       </div>
@@ -414,17 +418,18 @@
     <form action="index.html" method="post" class="modal-feedback-form">
       <div class="modal-body">
         <div>
-          <label for="modal-feedback-name">Ваше имя:</label>      
-          <input type="text" name="name" placeholder="Имя Фамилия" id="modal-feedback-name">        
+          <label for="modal-feedback-name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="modal-feedback-name">
         </div>
         <div>
-          <label for="modal-feedback-email">Ваш e-mail: </label>         
-          <input type="email" name="email" placeholder="email@example.com" id="modal-feedback-email">       
+          <label for="modal-feedback-email">Ваш e-mail: </label>
+          <input type="email" name="email" placeholder="email@example.com" id="modal-feedback-email">
         </div>
         <div>
           <label for="modal-feedback-reply">Текст письма</label>
-          <textarea name="message" cols="30" rows="10" placeholder="В свободной форме" id="modal-feedback-reply"></textarea>     
-        </div>    
+          <textarea name="message" cols="30" rows="10" placeholder="В свободной форме"
+            id="modal-feedback-reply"></textarea>
+        </div>
       </div>
       <div class="button-back">
         <button type="submit" class="button">Отправить</button>
