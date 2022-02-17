@@ -904,7 +904,7 @@ a {
     cursor: pointer;
 }
 
-.dot-2 {    
+.dot-2 {
     position: absolute;
     display: block;
     width: 8px;
@@ -1940,7 +1940,6 @@ a {
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
-    margin: -1px;
     margin: -1px;
     font-size: 0;
 }
